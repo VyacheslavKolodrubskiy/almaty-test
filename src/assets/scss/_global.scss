@@ -1,0 +1,58 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  color: #343030;
+  font-family: "Merriweather", serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+h6 {
+  font-weight: lighter;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  min-height: calc(100vh - 105px - 103px);
+}
+
+.container {
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
