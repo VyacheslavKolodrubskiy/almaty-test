@@ -57,6 +57,8 @@ import AppNavbar from '@/components/AppNavbar.vue'
       }
     }
   }
+  // .footer__phone
+  // .footer__region
   &__phone,
   &__region {
     position: relative;
