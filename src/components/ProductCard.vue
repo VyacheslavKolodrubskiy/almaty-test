@@ -17,7 +17,7 @@ const selectedProductId = ref<null | number>(null)
 
 const isSpinnerShown = computed(() => {
   return (
-    isLoading &&
+    isLoading.value &&
     !props.product.bought &&
     selectedProductId.value === props.product.id
   )
