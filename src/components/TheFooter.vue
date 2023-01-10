@@ -67,7 +67,6 @@ import AppNavbar from '@/components/AppNavbar.vue'
       position: absolute;
       width: 16px;
       height: 16px;
-      background: url('@/assets/images/icons/phone.svg') no-repeat;
       left: 0;
       top: 50%;
       transform: translateY(-50%);
