@@ -42,7 +42,15 @@ const products = ref<Product[]>([
 
 const { start, stop } = useLoading()
 
+const selectedProductsId = ref<number[]>([])
+
 async function fetchPost(id: number) {
+  if (!selectedProductsId.value.includes(id)) {
+    selectedProductsId.value.push(id)
+  } else {
+    return
+  }
+
   start()
 
   try {
@@ -74,6 +82,9 @@ onMounted(() => {
 
     if (productsStorage.length) {
       products.value = productsStorage
+      selectedProductsId.value.push(
+        ...productsStorage.filter(({ bought }) => bought).map(({ id }) => id)
+      )
     }
   } catch (error) {
     console.error(error)
