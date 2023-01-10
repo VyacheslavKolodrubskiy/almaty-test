@@ -12,10 +12,7 @@ withDefaults(
 </script>
 
 <template>
-  <a
-    class="logo"
-    href="#"
-  >
+  <a href="#">
     <svg
       width="48"
       height="48"
