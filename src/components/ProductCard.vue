@@ -99,60 +99,63 @@ function handleClick(id: number) {
 </template>
 
 <style lang="scss">
-.product__card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #e1e1e1;
+.product {
+  // product__card
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e1e1e1;
+  }
   // product__card-sold
-  &-sold {
+  &__card-sold {
     opacity: 0.5;
-    product__card-title {
+    .product__card-title {
       margin-bottom: 34px;
     }
   }
   // product__card-btn-bought
-  &-btn-bought {
+  &__card-btn-bought {
     display: flex;
     align-items: center;
   }
   // product__card-img
-  &-img {
+  &__card-img {
   }
   // product__card-check-icon
-  &-check-icon {
+  &__card-check-icon {
     margin-right: 4px;
   }
   // product__card-content
-  &-content {
+  &__card-content {
     height: 100%;
     padding: 20px 24px 24px;
   }
   // product__card-title
-  &-title {
+  &__card-title {
     margin-bottom: 22px;
   }
   // product__card-footer
-  &-footer {
+  &__card-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   // product__card-price
-  &-price {
+  &__card-price {
   }
   // product__card-price-old
-  &-price-old {
+  &__card-price-old {
     font-weight: 300;
     color: #a0a0a0;
     text-decoration-line: line-through;
   }
   // product__card-price-current
-  &-price-current {
+  &__card-price-current {
     font-weight: 700;
     font-size: 16px;
   }
   // product__card-btn-buy
-  &-btn-buy {
+  &__card-btn-buy {
   }
 }
 </style>
